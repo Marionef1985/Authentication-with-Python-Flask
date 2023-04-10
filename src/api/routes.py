@@ -16,3 +16,19 @@ def handle_hello():
     }
 
     return jsonify(response_body), 200
+
+@app.route('/signup', methods=['GET'])
+def user_signup():
+
+    response_body = {
+        "message": "estos son mis datos"
+    }
+    return jsonify(response_body), 200
+
+@app.route('/login', methods=['GET'])
+def user_signup():
+    return 'aqui meto mis datos username y password'
+
+@app.route('/login', methods=['POST'])
+def user_signup():
+    return 'aqui meto mis datos username y password'
